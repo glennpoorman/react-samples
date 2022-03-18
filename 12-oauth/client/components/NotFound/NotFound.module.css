@@ -1,0 +1,20 @@
+.container-404 {
+  color : steelblue;
+  text-align : center;
+}
+
+.container-404 a {
+  color : rosybrown;
+  font-size : 1.2em;
+  text-decoration : none;
+}
+
+.container-404 a:hover {
+  color : dimgray;
+  text-decoration : underline;
+}
+
+.container-404 h2 {
+  margin-top : 48px;
+  margin-bottom : 22px;
+}

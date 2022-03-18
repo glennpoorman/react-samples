@@ -1,0 +1,11 @@
+.header {
+    background : steelBlue;
+    box-shadow : 0px 5px 5px grey;
+    color : white;
+    font-size : 48px;
+    font-style : italic;
+    margin : 0px 0px 24px 0px;
+    padding : 8px;
+    text-align : center;
+    text-shadow : 3px 3px 4px lightGrey;
+  }

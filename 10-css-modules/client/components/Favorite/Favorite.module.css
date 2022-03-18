@@ -1,0 +1,17 @@
+.favorite {
+  background : steelBlue;
+  border-radius : 0;
+  border-top : 1px solid white;
+  box-shadow : 5px 5px 5px grey;
+  box-sizing : border-box;
+  color : white;
+  padding : 8px 16px;
+}
+
+.favorite button {
+  border-radius : 0;
+  float : right;
+  margin-top : 8px;
+  padding : 2px 12px;
+  width : auto;
+}

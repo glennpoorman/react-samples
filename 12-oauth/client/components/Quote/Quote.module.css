@@ -1,0 +1,12 @@
+.quote > :first-child {
+  font-style : italic;
+}
+
+.quote > :last-child {
+  font-weight : bold;
+}
+
+.quote > :last-child:before {
+  content : "-";
+  margin-right : 6px;
+}

@@ -1,0 +1,23 @@
+.movie-quote {
+  margin-left : auto;
+  margin-right : auto;
+  width : 80%;
+}
+
+.movie-quote button {
+  border-radius : 8px;
+  margin-right : 6px;
+  margin-top : 18px;
+  outline: none;
+  padding : 6px 18px;
+  width : 160px;
+}
+
+.movie-quote>div {
+  background : steelBlue;
+  border-radius : 8px;
+  box-shadow : 5px 5px 5px grey;
+  box-sizing : border-box;
+  color : white;
+  padding : 16px;
+}

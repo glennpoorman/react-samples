@@ -1,0 +1,10 @@
+{
+  // The preset for converting JSX into JS is added to the presets list.
+  //
+  // NOTE: Order is important here. The code is run through the presets in reverse order of how
+  //       they are listed here.
+  //
+  //       JSX -> babel/preset-react -> preset-env -> compatible JS code
+  //
+  "presets" : ["@babel/preset-env", "@babel/preset-react"]
+}
