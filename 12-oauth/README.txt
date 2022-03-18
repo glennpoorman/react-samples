@@ -1,6 +1,30 @@
 oauth
 -----
+This sample continues to investigate the React Router by re-introducing authentication back into
+the movie quotes app. Just like the sample from "nodejs-samples" of the same name, the application
+now wakes up showing a login page prompting the user to "Login with GitHub". If the user logs in
+successfully, they will be redirected to the main quotes app page. In addition, a new "Logout"
+selection is added to the navigation bar that, if selected, will log the user out and redirect
+back to the login page.
 
+This is handled using React routes just like the previous sample. A new route "/login" will render
+a new "Login" component will the new "/logout" route will render the "Logout" component. Upon
+initial entry into the app rendering code, we'll pass the main component a flag stating whether or
+not the user is currently logged in. If they are, we proceed as normal. If not, we'll redirect to
+the "/login" route which will take us back to the app rendering function but this time using the
+different route. That route will render the "Login" component.
+
+When the user logs out (via a new selection in the navigation bar), we'll redirect to the "/logout"
+component. Again this will take us back to the app rendering function with a different route that
+will render the "Logout" component. The "Logout" component is a bit of an odd duck though. This
+component won't actually render anything you can see. The render function will first call a utility
+to log the user out by removing the movie quotes cookie from the document. After that, it will
+render a single "Navigate" component (from "react-router-dom") essentially redirecting back to the
+app again specifying the "/login" route. At this point, our user is starting over.
+
+Also note that the logout rendering could have just as easily redirected to the "/" route as the
+main app functionality would have queried to see if the user is logged in and then would have
+redirected to "/login" achieving the exact same result.
 
 Try It
 ------
