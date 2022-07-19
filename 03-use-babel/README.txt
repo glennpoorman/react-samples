@@ -54,7 +54,7 @@ installed) as follows:
 
 The output should look something like:
 
-  var to Console = function toConsole(str) {
+  var toConsole = function toConsole(str) {
       return console.log(str);
   }
 

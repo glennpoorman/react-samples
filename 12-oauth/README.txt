@@ -26,6 +26,29 @@ Also note that the logout rendering could have just as easily redirected to the 
 main app functionality would have queried to see if the user is logged in and then would have
 redirected to "/login" achieving the exact same result.
 
+Registration
+------------
+Just as with the sample of the same name from "nodejs-samples", the application needs to be
+registered with the authorization server and the resulting client id and secret needs to be
+recorded in the file "server/config.js". Again we are going to use GitHub as our authorization
+server. To register the application then, use the following steps:
+
+  1. Login to GitHub.
+  2. In the menu under your profile picture, select "Settings".
+  3. Scroll down and, at the bottom of the left pane, select "Developer Settings".
+  4. Select "OAuth Apps".
+  5. Any apps you've already registered will be shown.
+  6. In the upper left corner, select "New OAuth App".
+  7. Fill in the application name with something descriptive.
+  8. Fill in the Homepage URL "http://localhost:3000".
+  9. Fill in the Authorization callback URL "http://localhost:3000/oauth/code"
+ 10. Click the "Register application" button.
+ 11. On the next page, make a note of the Client ID.
+ 12. Click "Generate a new client secret" (you may need to re-enter password).
+ 13. Make a note of the generated client secret.
+ 14. Make sure the app is saved/updated in the web portal.
+ 15. Add the client id and secret as values of the properties in "server/config.js".
+
 Try It
 ------
 
